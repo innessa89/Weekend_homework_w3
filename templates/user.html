@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% for player in palayers %}
+
+    <ul>
+        <li>
+            Name <b>{{ player.name}}</b>
+        </li>
+        <li>
+            Players choice <b>{{ player.choice}}</b>
+        </li>
+    </ul>
+
+ {% endfor %}
+ <p>{{ result }} </p>
+ <ul>
+    <li><a href="/">Home page</a></li>
+</ul>
+
+{% endblock %}
