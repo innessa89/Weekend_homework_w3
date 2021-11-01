@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+      <div class="header">
       <h1>Lets Start! Good Luck!</h1>
+      </div>
 
       <form action="/start" method="post">
           <label for="player_one">Player 1</label>
             <select name="player_one_choice" id="player_one_choice">
-              
+                <option value=""></option>
                 <option value="rock">Rock</option>
                 <option value="paper">Paper</option>
                 <option value="scissors">Scissors</option>
@@ -15,7 +16,7 @@
           <br>
           <label for="player_one">Player 2</label>
             <select name="player_two_choice" id="player_two_choice">
-
+                <option value=""></option>
                 <option value="rock">Rock</option>
                 <option value="paper">Paper</option>
                 <option value="scissors">Scissors</option>
